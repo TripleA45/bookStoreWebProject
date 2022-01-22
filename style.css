@@ -1,0 +1,124 @@
+/*
+* add bottom border for the navs 
+*/
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px auto;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: right;
+  border-bottom: 1px solid lightgray;
+}
+
+.navbarElement {
+  text-decoration: none;
+  color: black;
+  margin: 1em;
+}
+.navbarElementLogo {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 20px;
+}
+.bookShelf {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 15px;
+  z-index: auto;
+  justify-items: center;
+}
+.book {
+  display: flex;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.2);
+  transition: 300ms;
+}
+
+.book_image {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.book_info {
+  padding: 10px;
+}
+.book_info_title {
+  font-size: 20px;
+}
+
+.book_info_rating {
+  color: orange;
+  font-size: 20px;
+}
+.book_info_price {
+  color: green;
+  font-weight: bold;
+}
+.book_info_addToCart {
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border-radius: 28px;
+  padding: 10px 12px;
+  background-color: rgb(85, 85, 85);
+  display: inline-block;
+  margin: 50px auto auto;
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  body {
+    flex-direction: row;
+    min-width: 600px;
+  }
+
+  .bookShelf {
+    margin-left: auto;
+  }
+  .navbar {
+    flex-direction: column;
+    position: fixed;
+    border: none;
+  }
+
+  .navbarElement {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+  }
+  .navbarElementLogo {
+    border: none;
+  }
+}
+
+/*-----------------------------------------*/
+.bookShelf-blured {
+  filter: blur(3px);
+  z-index: 0;
+}
+.book-selected {
+  filter: blur(0px);
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  top: 20%;
+  transition: transform 600ms;
+  /* width: 50%;
+  height: 60%; */
+}
+.book-selected > .book_image {
+  width: 40%;
+}

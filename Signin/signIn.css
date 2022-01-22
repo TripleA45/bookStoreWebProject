@@ -1,0 +1,146 @@
+* {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+}
+
+.wrapper {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.signinBox {
+  width: 720px;
+  height: 480px;
+  display: flex;
+  flex-flow: row nowrap;
+  background-color: white;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 20px;
+  padding: 0px;
+  transition: transform 600ms;
+}
+
+.signinBox:hover {
+  transform: scale(1.02);
+}
+
+.signinImgContainer {
+  position: relative;
+  width: 50%;
+  height: 100%;
+  border-bottom-left-radius: 20px;
+  border-top-left-radius: 20px;
+  background-color: white;
+  background-image: url(./img/pexels-janko-ferlic-590493.jpg);
+  background-size: cover;
+  background-position: left;
+  justify-content: center;
+  align-items: flex-end;
+  display: flex;
+}
+
+.signinImgContainer h1 {
+  margin-bottom: 0;
+  font-size: 72pt;
+  color: white;
+  transition: transform 600ms;
+}
+
+.signinImgContainer h1,
+.signinImgContainer h2 {
+  text-align: right;
+}
+
+label img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.email {
+  width: 80%;
+  margin-top: 30px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  padding: 3px;
+}
+
+.password {
+  width: 80%;
+  margin-top: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  padding: 3px;
+}
+
+.formButtons {
+  width: 80%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+div > input {
+  font-size: 11pt;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.signinImgContainer h2 {
+  position: absolute;
+  top: 55%;
+  justify-self: center;
+  color: white;
+  display: none;
+}
+
+.signinForm {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 50%;
+  height: 100%;
+}
+.signinForm h1 {
+  margin-top: 0;
+}
+
+.signin,
+.cancel {
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(85, 85, 85);
+  padding: 1em;
+  border-radius: 10px;
+  font-size: 10pt;
+  cursor: pointer;
+  border: none;
+  width: 40%;
+  transition: transform 600ms, box-shadow 600ms;
+}
+
+form > div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.password img {
+  width: 28px;
+  height: 28px;
+}
+
+@media screen and (max-width: 768px) {
+  .signinBox {
+    transform: scale(0.9, 0.9);
+  }
+}
