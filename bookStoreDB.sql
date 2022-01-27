@@ -16,7 +16,8 @@ create table book(
     bookType varchar(10) not null,
     bookRating double,
 	primary key(bId));
-    
+ alter table book ADD COLUMN bookDescription varchar(200) AFTER bookPrice;
+ 
 create table bookCollection(
     bCId int not null,	
     bookCollectionName varchar(30) not null,
@@ -31,3 +32,4 @@ create table bookCart(
     bookCartPrice int not null,
     primary key(bCartId));
     
+insert into userAccount values(1, 'TripleA45', 'triple@gmail.com', '4d3M0957', '0');

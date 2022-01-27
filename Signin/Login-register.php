@@ -13,9 +13,9 @@
     <div class="wrapper">
         <div class="comtainer" id="container">
             <div class="signin-signup">
-                <form action="#" method="post" class="signinForm">
+                <form action="logIn.php" method="post" class="signinForm">
                     <h1>Sign In</h1>
-                    <div class="email">
+                    <div class="username">
                         <label for="username"><img src="Icons/male_user_100px.png" alt="" /></label>
                         <input type="text" name="username" id="username" placeholder="User name" />
                     </div>
@@ -24,11 +24,11 @@
                         <input type="password" id="password" name="password" placeholder="Password" />
                     </div>
                     <div class="formButtons">
-                        <button class="signin">Sign In</button>
+                        <button class="signin" name="signin">Sign In</button>
                         <button class="cancel">Cancel</button>
                     </div>
                 </form>
-                <form action="#" method="post" class="signupForm">
+                <form action="signUp.php" method="post" class="signupForm">
                     <h1>Sign up</h1>
                     <div class="username">
                         <label for="username"><img src="Icons/male_user_100px.png" alt="" /></label>
@@ -43,7 +43,7 @@
                         <input type="password" id="password" name="password" placeholder="Password" />
                     </div>
                     <div class="formButtons">
-                        <button class="signup">Sign Up</button>
+                        <button class="signup" name="signup">Sign Up</button>
                         <button class="cancel">Cancel</button>
                     </div>
                 </form>
