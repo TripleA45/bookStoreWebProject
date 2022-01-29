@@ -1,22 +1,38 @@
 <?php
-    define('SITEURL','http://localhost:3000/');
-    $db_host = 'localhost';
-    $db_user = 'root';
-    $db_pass = 'havi&val';// when using cahne it to your password 
-    $db_name = 'bookStoreDataBase';
+    define('SITEURL','http://localhost/');
+    $db_Host = 'localhost';
+    $db_User = 'adem';
+    $db_password = '1234';
+    $db_Name = 'bookstoredatabase';
 
-    //Database connection
-    $conn = mysqli_connect($db_host, $db_user, $db_pass);
+    // //Database connection
+    // $conn = mysqli_connect("localhost", "root", "1234");
 
-    //Selecting Database
+    // // //Selecting Database
+    // if(!$conn){
+    //     die('Connection failed. '.mysqli_connect_error());
+    // }
+    // else{
+    //     echo('Connection Error'.mysqli_connect_error());
+    //     exit();
+    // }
+    
+    // Set DSN
+    $dsn = 'mysql:host='. $db_Host . ':dbname='. $db_Name;
+
+    //Create a PDO instance
+    $conn = new PDO($dsn, $db_User, $db_password);
+
     if($conn){
-        $db_select = mysqli_select_db($conn, $db_name) or die(mysqli_connect_error());
-    }
-    else{
-        echo('Connection Error'.mysqli_connect_error());
-        exit();
+        echo('Success');
+    }else{
+        echo('failure');
     }
 
+    // $conn = new mysqli($db_Host, $db_User, $db_password, $db_Name);
+    // if(!$conn){
+    //     die(mysqli_error($conn));
+    // }
     //Database connection
     // try{
     //     $conn = new PDO("mysql:host=$db_host;dbname=$db_name, $db_user, $db_pass");
@@ -27,4 +43,5 @@
     //     echo('Connection Error'.$e ->getMessage());
     //     exit();
     // }
+
 ?>
