@@ -25,7 +25,7 @@
                     </div>
                     <div class="formButtons">
                         <button class="signin" name="signin">Sign In</button>
-                        <button class="cancel">Cancel</button>
+                        <button class="cancel" name="close">Cancel</button>
                     </div>
                 </form>
                 <form action="signUp.php" method="post" class="signupForm">
@@ -44,7 +44,7 @@
                     </div>
                     <div class="formButtons">
                         <button class="signup" name="signup">Sign Up</button>
-                        <button class="cancel">Cancel</button>
+                        <button class="cancel" name="close">Cancel</button>
                     </div>
                 </form>
             </div>

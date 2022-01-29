@@ -1,7 +1,7 @@
-var signIn = document.querySelector(".signin");
-var cancel = document.querySelector(".cancel");
-var email = document.querySelector("#email");
-var password = document.querySelector("#password");
+// var signIn = document.querySelector(".signin");
+// var cancel = document.querySelector(".cancel");
+// var email = document.querySelector("#email");
+// var password = document.querySelector("#password");
 
 //
 const sign_In = document.querySelector("#signIn");
@@ -16,17 +16,19 @@ sign_In.addEventListener('click', () =>{
 });
 
 //
-signIn.addEventListener("click", (e) => {
-  if (
-    email.value.includes("@") &&
-    email.value.includes(".") &&
-    password.value.length > 8
-  ) {
-    this.close();
-  }
+// signIn.addEventListener("click", (e) => {
+//   // if (
+//   //   email.value.includes("@") &&
+//   //   email.value.includes(".") &&
+//   //   password.value.length > 8
+//   // ) {
+//   //   this.close();
+//   console.log('enter');
+//   });
 
-  e.preventDefault();
-});
-cancel.addEventListener("click", () => {
-  this.close();
-});
+//   e.preventDefault();
+// });
+// cancel.addEventListener("click", () => {
+//   this.close();
+// });
+// //
