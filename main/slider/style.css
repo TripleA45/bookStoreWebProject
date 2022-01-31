@@ -1,0 +1,134 @@
+*{
+  font-family: "Montserrat", sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+  
+.slider{
+    width: 90%;
+    height: 500px;
+    border-radius: 10px; 
+    overflow: hidden;
+}
+  
+.slides{
+    width: 500%;
+    height: 500px;
+    display: flex;
+}
+  
+.slides input{
+    display: none;
+}
+  
+.slide{
+    width: 60%;
+    transition: 2s;
+    margin-right: -40%;
+    margin-left: 5%;
+}
+
+.book-slide{
+    width: 20%;
+    display: flex;
+    border-radius: 10px;
+    box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.2);
+    transition: 300ms;
+}
+
+.slide-img{
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+    height: 450px;
+    width: 80%;
+    position: relative;
+    padding: 0;
+    margin-right: -20%;
+}
+
+.slide-img img{
+    width: 100%;
+    height: 100%;
+    object-fit: scale-down;
+    box-sizing: border-box;
+    margin-left: -10%;
+} 
+
+.book_detail{
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  padding: 0px 50px;
+  box-sizing: border-box;
+}
+
+.book_detail_title {
+  font-size: 20px;
+}
+
+.book_detail_rating {
+  color: orange;
+  font-size: 20px;
+}
+
+.book_detail_desc {
+  font-weight: 300;
+  width: 50%;
+}
+
+  #radio1:checked ~ .first{
+    margin-left: -15%;
+  }
+  
+  #radio2:checked ~ .first{
+    margin-left: -45%;
+  }
+  
+  #radio3:checked ~ .first{
+    margin-left: -70%;
+  }
+  
+  #radio4:checked ~ .first{
+    margin-left: -95%;
+  }
+
+  #radio5:checked ~ .first{
+    margin-left: -120%;
+  }
+
+  #radio6:checked ~ .first{
+    margin-left: 5%;
+  }
+  
+  #radio1:checked ~ .navigation-auto .auto-btn1{
+    background: rgb(85, 85, 85);
+  }
+  
+  #radio2:checked ~ .navigation-auto .auto-btn2{
+    background: rgb(85, 85, 85);
+  }
+  
+  #radio3:checked ~ .navigation-auto .auto-btn3{
+    background: rgb(85, 85, 85);
+  }
+  
+  #radio4:checked ~ .navigation-auto .auto-btn4{
+    background: rgb(85, 85, 85);
+  }
+
+  #radio5:checked ~ .navigation-auto .auto-btn4{
+    background: rgb(85, 85, 85);
+  }
+
+  #radio6:checked ~ .navigation-auto .auto-btn4{
+    background: rgb(85, 85, 85);
+  }
+        

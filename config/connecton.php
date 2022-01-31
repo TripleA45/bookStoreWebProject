@@ -1,35 +1,28 @@
 <?php
     define('SITEURL','http://localhost/');
-    $db_Host = 'localhost';
-    $db_User = 'adem';
+    $db_Host = '127.0.0.1';
+    $db_User = 'root';
     $db_password = '1234';
     $db_Name = 'bookstoredatabase';
 
     // //Database connection
-    // $conn = mysqli_connect("localhost", "root", "1234");
-
-    // // //Selecting Database
-    // if(!$conn){
-    //     die('Connection failed. '.mysqli_connect_error());
-    // }
-    // else{
-    //     echo('Connection Error'.mysqli_connect_error());
-    //     exit();
-    // }
+    $conn = new mysqli($db_Host, $db_User, $db_password, $db_Name);
+    // //Selecting Database
+    if(!$conn){
+        die('Connection failed. '.mysqli_connect_error());
+    }
+    else{
+        echo('Connection Error'.mysqli_connect_error());
+        exit();
+    }
     
     // Set DSN
-    $dsn = 'mysql:host='. $db_Host . ':dbname='. $db_Name;
+    // $dsn = 'mysql:host='. $db_Host . ':dbname='. $db_Name;
 
-    //Create a PDO instance
-    $conn = new PDO($dsn, $db_User, $db_password);
+    // //Create a PDO instance
+    // $conn = new PDO($dsn, $db_User, $db_password);
 
-    if($conn){
-        echo('Success');
-    }else{
-        echo('failure');
-    }
-
-    // $conn = new mysqli($db_Host, $db_User, $db_password, $db_Name);
+    // 
     // if(!$conn){
     //     die(mysqli_error($conn));
     // }
