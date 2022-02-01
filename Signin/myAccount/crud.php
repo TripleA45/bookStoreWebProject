@@ -22,8 +22,11 @@
         if($res == true){
             $count = mysqli_num_rows($res);
             if($count == 1){
-                $_SESSION['Update'] = 'Information has been successfully uppdated.'; 
-                header('location:'.SITEURL.'../userSetting.php');
+                $sql2 = "";
+                {
+                    $_SESSION['Update'] = 'Information has been successfully uppdated.'; 
+                    header('location:'.SITEURL.'../userSetting.php');
+                }
             }
         }else{
             header('location:'.SITEURL.'../userSetting.php');

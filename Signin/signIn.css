@@ -280,26 +280,4 @@ right: 52%;
   .signinBox {
     transform: scale(0.9, 0.9);
   }
-  /* .signinImgContainer {
-  position: relative;
-  width: 50%;
-  height: 100%;
-  border-bottom-left-radius: 20px;
-  border-top-left-radius: 20px;
-  background-color: white;
-  /* background-image: url(./img/pexels-janko-ferlic-590493.jpg);
-  background-size: cover;
-  background-position: left; */
-  /* justify-content: center;
-  align-items: flex-end;
-  display: flex;
-}
-
-.signinImgContainer h1,
-.signupImgContainer h1 {
-  margin-bottom: 50%;
-  font-size: 56pt;
-  transition: transform 600ms;
-}
-*/
 }

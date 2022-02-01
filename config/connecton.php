@@ -1,6 +1,6 @@
 <?php
     define('SITEURL','http://localhost/');
-    $db_Host = '127.0.0.1';
+    $db_Host = 'localhost';
     $db_User = 'root';
     $db_password = '1234';
     $db_Name = 'bookstoredatabase';
