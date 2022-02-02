@@ -26,15 +26,3 @@ function filterProducts(e) {
         }
     })
 }
-
-// REDIRECTING TO SIGN-IN 
-login = document.querySelector(".book_info_goToStore");
-signin = document.querySelector(".navbar").childNodes[3];
-
-signin.addEventListener("click", () => {
-    window.open("Login-register.php");
-});
-
-login.addEventListener("click", () => {
-    window.open("Login-register.php");
-});

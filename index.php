@@ -17,7 +17,7 @@
       <a class="navbarElement" href="#">Book Store</a>
       <!-- <a class="navbarElement" href="#">My Collection</a> -->
       <a class="navbarElement" href="#">Cart</a>
-      <a class="navbarElement" href="#">My Account</a>
+      <a class="navbarElement" href="Signin/myAccount/userSetting.php">My Account</a>
       <a class="navbarElement navbarElementLogout" href="#">Log out</a>
 
     </nav>
