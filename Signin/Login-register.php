@@ -14,7 +14,9 @@
         <div class="comtainer" id="container">
             <div class="signin-signup">
                 <form action="logIn.php" method="post" class="signinForm">
-                    <h1>Sign In</h1>
+                    <h1>Sign In<?php
+                        
+                        ?></h1>
                     <div class="username">
                         <label for="username"><img src="Icons/male_user_100px.png" alt="" /></label>
                         <input type="text" name="username" id="username" placeholder="User name" />
@@ -29,7 +31,9 @@
                     </div>
                 </form>
                 <form action="signUp.php" method="post" class="signupForm">
-                    <h1>Sign up</h1>
+                    <h1>Sign up <?php
+                        
+                    ?></h1>
                     <div class="username">
                         <label for="username"><img src="Icons/male_user_100px.png" alt="" /></label>
                         <input type="text" name="username" id="username" placeholder="User name" />

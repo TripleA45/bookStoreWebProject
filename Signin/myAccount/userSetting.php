@@ -1,3 +1,6 @@
+<!-- <#?php
+    include '../../config/connecton.php';
+?> -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +11,16 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- <#?php 
+        $sql = "SELECT * FROM userAccount;";
+        $res = mysqli_query($conn, $sql);
+        $resultCheck = mysqli_num_rows($res);
+        if($resultCheck > 0){
+            while($row = mysqli_fetch_assoc($res)){
+                
+            }
+        }
+    ?> -->
     <div class="main">
         <form action="crud.php" method="post">
             <div class="left-panel">

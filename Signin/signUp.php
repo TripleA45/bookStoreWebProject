@@ -20,7 +20,8 @@ if(isset($_POST['signup'])){
     //check if the query is executed 
     if($res == true){
         $count = mysqli_num_rows($res);
-        if($count > 1){
+        if($count == 1){
+                $_SESSION['currentUser'] = $userName;
                 $_SESSION['Logged'] = 'Successfully logged in.'; 
                 header('location:'.SITEURL.'../index.php');
         }else{

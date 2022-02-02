@@ -3,24 +3,24 @@ var selectedBook;
 
 //Traversing The DOM
 book = Array.from(document.querySelectorAll(".book"));
-login = document.querySelector(".navbarElementLogin");
+logout = document.querySelector(".navbarElementLogout");
 home = document.querySelector(".navbar").childNodes[3];
 
 //Adding Event Listener
 home.addEventListener("click", () => {
-  window.open("index.html");
+  window.open("index.php");
 });
 book.forEach((book) => {
   book.addEventListener("click", showBookDetail);
 });
-login.addEventListener("click", () => {
-/*   loginWindow = window.open("./Signin/signIn.html", "Login", [
-    "width=800px",
-    "height=600px",
-    `left=${(screen.width - 800) / 2}`,
-    `top=${(screen.height - 600) / 2}`,
-  ]); */
-  window.open("./Signin/signIn.html", "Login");
+logout.addEventListener("click", () => {
+// /*   loginWindow = window.open("./Signin/signIn.html", "Login", [
+//     "width=800px",
+//     "height=600px",
+//     `left=${(screen.width - 800) / 2}`,
+//     `top=${(screen.height - 600) / 2}`,
+//   ]); */
+//   window.open("./Signin/signIn.html", "Login");
 });
 
 function showBookDetail(e) {
