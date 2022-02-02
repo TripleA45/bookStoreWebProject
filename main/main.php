@@ -122,7 +122,7 @@
                                 <h2 class="book_info_title">The Javascript Way</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>
@@ -132,7 +132,7 @@
                                 <h2 class="book_info_title">JavaScript Allongé</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>href="../Signin/Login-register.php">
                             </div>
@@ -142,7 +142,7 @@
                                 <h2 class="book_info_title">Unfuk Yourself</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>
@@ -152,7 +152,7 @@
                                 <h2 class="book_info_title">The Four Hour Work Week</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>
@@ -162,7 +162,7 @@
                                 <h2 class="book_info_title">Design Elements</h2h2>
                                 <div class="book_info_details">
                                         <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                        <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                        <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>
@@ -172,7 +172,7 @@
                                 <h2 class="book_info_title">Design Principles for Using Grids</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>
@@ -184,7 +184,7 @@
                                     <h2 class="book_info_title">125 Ways to Enhance Usability</h2>
                                     <div class="book_info_details">
                                         <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                        <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                        <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                     </div>
                                     </div>
                             </div>
@@ -204,7 +204,7 @@
                                 <h2 class="book_info_title">Eloquent JavaScript</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>
@@ -224,7 +224,7 @@
                                 <h2 class="book_info_title">The Desing of Everyday Things</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>
@@ -234,7 +234,7 @@
                                 <h2 class="book_info_title">Logo Design Love</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">>Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>

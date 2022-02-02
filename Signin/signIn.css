@@ -276,8 +276,96 @@ right: 52%;
 
 /* End of Animation tranition*/
 
-@media screen and (max-width: 768px) {
-  .signinBox {
-    transform: scale(0.9, 0.9);
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  body {
+    min-width: 600px;
+  }
+
+  .wrapper{
+    min-height: 600px;
+    height: 100vh;
+  }
+
+  .wrapper:before{
+    width: 1500px;
+    height: 1500px;
+    left: 30%;
+    bottom: 55%;
+    transform: translateX(-50%);
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .signin-signup{
+    width: 90%;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .panel-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    top: -8%;
+  }
+
+  .panel .contents{
+    margin-top: -40px;
+    padding-top: -10%;
+    width: fit-content;
+    height: min-content;
+  }
+
+  .panel h2{
+    font-size: 12pt;
+  }
+
+  .panel h3{
+    font-size: 10pt;
+  }
+
+  .btn-transparent{
+    width: 110px;
+    height: 40px;
+    font-size: 0.7rem;
+  }
+
+  .left-panel{
+    grid-row: 1 / 2;
+  }
+
+  .right-panel{
+    grid-row: 2 / 4;
+  }
+
+  .left-panel h1,
+  .right-panel h1 {
+    margin-top: -5%;
+    font-size: 36pt;
+  }
+
+  .wrapper.sign-up-mode:before{
+    transform: translate(-50%, 100%);
+    bottom: 45%;
+    right: initial;
+  }
+
+  .wrapper.sign-up-mode .left-panel .contents{
+    transform: translateY(-250px);
+  }
+
+  .wrapper.sign-up-mode .signin-signup{
+    top: 5%;
+    transform: translate(-50%, 0);
+    left: 58%;
   }
 }
