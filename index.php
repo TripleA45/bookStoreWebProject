@@ -15,10 +15,10 @@
     <nav class="navbar">
       <a class=" navbarElement navbarElementLogo" href="#">MEGA</a>
       <a class="navbarElement" href="#">Book Store</a>
-      <a class="navbarElement" href="#">My Collection</a>
+      <!-- <a class="navbarElement" href="#">My Collection</a> -->
       <a class="navbarElement" href="#">Cart</a>
       <a class="navbarElement" href="#">My Account</a>
-      <a class="navbarElement navbarElementLogin" href="#">Log out</a>
+      <a class="navbarElement navbarElementLogout" href="#">Log out</a>
 
     </nav>
   </head>
