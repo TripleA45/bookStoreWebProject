@@ -13,7 +13,7 @@
     <div class="header">
         <nav class="navbar">
             <a class=" navbarElement navbarElementLogo" href="#">MEGA</a>
-            <a class="navbarElement" href="../Signin/Login-register.php">Book Store</a>   
+            <a class="navbarElement navbarElementRedirect" href="../Signin/Login-register.php">Book Store</a>   
           </nav>
     </div>
     <div class="section">
@@ -134,7 +134,7 @@
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
                                     <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
-                                </div>href="../Signin/Login-register.php">
+                                </div>
                             </div>
                             <div class="book">
                                 <img  src="../../Img/Unfuk Yourself.jpg" alt="" />
@@ -214,7 +214,7 @@
                                 <h2 class="book_info_title">Shoe Dog</h2>
                                 <div class="book_info_details">
                                     <h3 class="book_info_rating">&#9733&#9733&#9733&#9733</h3>
-                                    <a class="book_info_goToStore" href="#">Go to store</a>
+                                    <a class="book_info_goToStore" href="../Signin/Login-register.php">Go to store</a>
                                 </div>
                                 </div>
                             </div>

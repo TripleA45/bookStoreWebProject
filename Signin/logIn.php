@@ -21,11 +21,19 @@ if(isset($_POST['signin'])){
     if($res == true){
         $count = mysqli_num_rows($res);
         if($count == 1){
+            while($row = mysqli_fetch_assoc($res)){
+                $userID= $row['userID'];
+                $userEmail= $row['userEmail'];
+            }
             $sql2 = "UPDATE `userAccount` WHERE userName = '$userName' AND userPassword = '$password' SET userStatus = $userStatus";
             $res2 = mysqli_query($conn, $sql2);
             if($res2 == true)
             {
-                $_SESSION['currentUser'] = $userName;
+                $_SESSION['currentuserID'] = $userID; 
+                $_SESSION['currentUserName'] = $username;
+                $_SESSION['currentUserPassword'] = $password ;
+                $_SESSION['currentUserEmail'] = $userEmail;
+                $_SESSION['currentUserStatus'] = $userStatus;
                 $_SESSION['Logged'] = 'Successfully logged in.'; 
                 header('location:'.SITEURL.'../index.php');
             }

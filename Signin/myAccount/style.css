@@ -4,7 +4,7 @@ body{
     background: #fff;
     font-family: "Montserrat", "Helvetica", sans-serif;
 }
-/*#F9A826*/
+
 .header{
     width: auto;
 }
@@ -112,13 +112,6 @@ label{
     justify-content: space-between;
     width: 140px;
     margin: 0 0 30px 5px;
-}
-
-.delete{
-    position: relative;
-    top: -227px;
-    left: 150px;
-    display: block;
 }
 
 .side-logo{

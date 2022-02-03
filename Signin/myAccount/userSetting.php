@@ -1,6 +1,11 @@
-<!-- <#?php
-    include '../../config/connecton.php';
-?> -->
+<?php 
+     session_start(); 
+     $id = $_SESSION['currentuserID'];
+     $name = $_SESSION['currentUserName'];
+     $email = $_SESSION['currentUserEmail'];
+     $pass = $_SESSION['currentUserPassword'];
+?>
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,40 +16,26 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- <#?php 
-        $sql = "SELECT * FROM userAccount;";
-        $res = mysqli_query($conn, $sql);
-        $resultCheck = mysqli_num_rows($res);
-        if($resultCheck > 0){
-            while($row = mysqli_fetch_assoc($res)){
-                
-            }
-        }
-    ?> -->
     <div class="main">
         <form action="crud.php" method="post">
             <div class="left-panel">
                 <div class="head">
                     <h2 class="header">User settings</h2>
                 </div>
-                <div class="name">
-                    <input type="name" name="" value="" >
+                <div class="id">
+                    <input type="name" name="" value="<?php $id?>" disabled>
+                    <label for="">ID</label>
+                </div>
+                <div class="Username">
+                    <input type="text" name="" value="<?php $name?>">
                     <label for="">User Name</label>
                 </div>
-                <div class="name">
-                    <input type="hidden" name="" value="id" disabled>
-                    <label for=""></label>
-                </div>
-                <div class="phoneNumber">
-                    <input type="text" name="" value="">
-                    <label for="">Contact number</label>
-                </div>
                 <div class="email">
-                    <input type="email" name="" value="" disabled>
+                    <input type="email" name="" value="<?php $email?>">
                     <label for="">Email</label>
                 </div>
                 <div class="password">
-                    <input type="password" class="pass" name="" value="">
+                    <input type="password" class="pass" name="" value="<?php $pass?>">
                     <label for="">Password</label>
                 </div>
                 <div class="password">

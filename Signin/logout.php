@@ -9,14 +9,14 @@ if(!isset($_SESSION))
 $userStatus = 0;
 
 //creating the sql query
-$sql = "SELECT * FROM `userAccount` WHERE userName = '$userName' AND userPassword = '$password'";
+$sql = "SELECT * FROM `tblUser` WHERE userName = '$userName' AND userPassword = '$password'";
 // execute the query
 $res = mysqli_query($conn, $sql);
 //check if the query is executed 
 if($res == true){
     $count = mysqli_num_rows($res);
     if($count == 1){
-        $sql2 = "UPDATE `userAccount` WHERE userName = '$userName' AND userPassword = '$password' SET userStatus = $userStatus";
+        $sql2 = "UPDATE `tblUser` WHERE userName = '$userName' AND userPassword = '$password' SET userStatus = $userStatus";
         $res2 = mysqli_query($conn, $sql2);
         if($res2 == true)
         {

@@ -13,6 +13,7 @@ if(isset($_POST['signup'])){
     $email = mysqli_real_escape_string($conn, $_POST['username']);
     $password = mysqli_real_escape_string($conn, md5($_POST['password']));
     $userStatus = 1;
+    $userId = 0;
     //creating the sql query
     $sql = "INSERT INTO `userAccount`(userName, userEmail, userPassword, userStatus) VALUES ('$userName', '$email', '$password', $userStatus)";
     // execute the query
@@ -21,7 +22,14 @@ if(isset($_POST['signup'])){
     if($res == true){
         $count = mysqli_num_rows($res);
         if($count == 1){
-                $_SESSION['currentUser'] = $userName;
+            while($row = mysqli_fetch_assoc($res)){
+                $userID= $row['userID'];
+            }
+                $_SESSION['currentuserID'] = $userId; 
+                $_SESSION['currentUserName'] = $userName;
+                $_SESSION['currentUserPassword'] = $password ;
+                $_SESSION['currentUserEmail'] = $email;
+                $_SESSION['currentUserStatus'] = $userStatus;
                 $_SESSION['Logged'] = 'Successfully logged in.'; 
                 header('location:'.SITEURL.'../index.php');
         }else{
