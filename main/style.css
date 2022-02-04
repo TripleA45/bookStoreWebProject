@@ -152,30 +152,6 @@ body::-webkit-scrollbar{
   #radio6:checked ~ .first{
     margin-left: 5%;
   }
-  
-  #radio1:checked ~ .navigation-auto .auto-btn1{
-    background: rgb(85, 85, 85);
-  }
-  
-  #radio2:checked ~ .navigation-auto .auto-btn2{
-    background: rgb(85, 85, 85);
-  }
-  
-  #radio3:checked ~ .navigation-auto .auto-btn3{
-    background: rgb(85, 85, 85);
-  }
-  
-  #radio4:checked ~ .navigation-auto .auto-btn4{
-    background: rgb(85, 85, 85);
-  }
-
-  #radio5:checked ~ .navigation-auto .auto-btn4{
-    background: rgb(85, 85, 85);
-  }
-
-  #radio6:checked ~ .navigation-auto .auto-btn4{
-    background: rgb(85, 85, 85);
-  }
 
 .section{
     margin-bottom: -15%;
@@ -192,7 +168,7 @@ body::-webkit-scrollbar{
 
 .browse{
     width: 90%;
-    height: 100vh;
+    height: 80%;
     background: #fff;
     margin: auto;
     display: flex;
@@ -223,6 +199,7 @@ body::-webkit-scrollbar{
     border: none;
     outline: none;
     box-shadow: none;
+    position: sticky;
     width: 60%;
     font-size: 14pt;
     font-weight: 600;

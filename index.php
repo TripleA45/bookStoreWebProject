@@ -19,7 +19,6 @@
       <a class="navbarElement" href="#">Cart</a>
       <a class="navbarElement" href="Signin/myAccount/userSetting.php">My Account</a>
       <a class="navbarElement navbarElementLogout" href="#">Log out</a>
-
     </nav>
   </head>
   <main class="bookShelf">
