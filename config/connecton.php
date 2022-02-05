@@ -3,10 +3,10 @@
     $db_Host = 'localhost';
     $db_User = 'root';
     $db_password = '1234';
-    $db_Name = 'bookstoredatabase';
+    $db_Name = 'bookstoredb';
 
     // //Database connection
-    $conn = new mysqli($db_Host, $db_User, $db_password, $db_Name);
+    $conn = mysqli_connect($db_Host, $db_User, $db_password, $db_Name);
     // //Selecting Database
     if(!$conn){
         die('Connection failed. '.mysqli_connect_error());

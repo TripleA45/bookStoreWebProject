@@ -15,7 +15,7 @@ if(isset($_POST['signup'])){
     $userStatus = 1;
     $userId = 0;
     //creating the sql query
-    $sql = "INSERT INTO `userAccount`(userName, userEmail, userPassword, userStatus) VALUES ('$userName', '$email', '$password', $userStatus)";
+    $sql = "INSERT INTO `useraccount`(userName, userEmail, userPassword, userStatus) VALUES ('$userName', '$email', '$password', $userStatus)";
     // execute the query
     $res = mysqli_query($conn, $sql);
     //check if the query is executed 
