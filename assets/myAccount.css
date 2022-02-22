@@ -1,0 +1,147 @@
+body{
+    margin: 0;
+    padding: 0;
+    background: #fff;
+    font-family: "Montserrat", "Helvetica", sans-serif;
+    display: flex;
+    flex-direction: column;
+    width: 90%;
+    margin: 10px auto;
+}
+header {
+    background-color: white;
+    position: sticky;
+    top: 0;
+    z-index: 10;
+    width: 100%;
+  }
+  .navbar {
+    display: flex;
+    justify-content: right;
+    border-bottom: 1px solid lightgray;
+  }
+  
+  .navbarElement {
+    text-decoration: none;
+    color: black;
+    margin: 1em;
+  }
+  .navbarElementLogo {
+    margin-right: auto;
+    font-weight: bold;
+    font-size: 20px;
+  }
+
+.heading{
+    width: auto;
+}
+
+.main{
+    width: 100%;
+}
+
+form{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border: 2px solid rgb(85, 85, 85);
+    border-radius: 10px;
+    width: 50%;
+    height: 50%;
+    padding: 25px;
+    display: flex;
+    justify-content: space-between;
+}
+
+h2{
+    position:relative;
+    margin: 20px 0 0 15px;
+    font-size: 36pt;
+    font-weight: bolder;
+    letter-spacing: 1px;
+}
+
+input{
+    border: 1px solid #d5d2d2;
+    border-radius: 5px;
+    height: 35px;
+    padding: 0 10px;
+    font-size: 16pt;
+    outline: none;
+}
+
+input:focus{
+    border: 1.5px solid #F9A826;
+}
+
+.name{
+    display: inline-block;
+}
+
+input[type="name"]{
+    display: block;
+    margin: 30px 0 0 10px;
+}
+
+input[type="text"]{
+    display: block;
+    margin: 10px 0 0 10px;
+}
+
+input[type="email"]{
+    display: block;
+    margin: 10px 0 0 10px;
+}
+
+.password{
+    display: inline-block;
+}
+
+.pass{
+    display: block;
+    width: 140px;
+    margin: 0 5px 0 10px;
+}
+
+input[type="submit"]{
+    background: rgb(85, 85, 85);
+    border: none;
+    color: #fff;
+    padding: 10px 30px;
+    font-size: 10pt;
+    margin: 50px 0 30px 10px;
+}
+
+label{
+    position: relative;
+    top: -28px;
+    left: 20px;
+    font-size: 12pt;
+    color: #555;
+    pointer-events: none;
+}
+
+label{
+    top: -49px;
+    left: 15px;
+    background: #fff;
+    padding: 0 5px;
+    font-size: 10pt;
+    font-weight: 700;
+}
+
+.btn{
+    display: flex;
+    align-items: center;
+    flex-direction: row;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 140px;
+    margin: 0 0 30px 5px;
+}
+
+.side-logo{
+    width: 400px;
+    height: 600px;
+}

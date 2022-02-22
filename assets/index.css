@@ -1,0 +1,259 @@
+body {
+  font-family: "Montserrat", sans-serif;
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+  margin: 10px auto;
+}
+
+header {
+  background-color: white;
+  position: sticky;
+  top: 0;
+  z-index: 10;
+  width: 100%;
+}
+.navbar {
+  display: flex;
+  justify-content: right;
+  border-bottom: 1px solid lightgray;
+}
+
+.navbarElement {
+  text-decoration: none;
+  color: black;
+  margin: 1em;
+}
+.navbarElementLogo {
+  margin-right: auto;
+  font-weight: bold;
+  font-size: 20px;
+}
+/* add to cart start */
+.cart{
+  position: fixed;
+  top: 0;
+  right: -100%;
+  width: 25%;
+  min-height: 100vh;
+  padding: 20px;
+  background: whitesmoke;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.2);
+  transition: .5s ease-in-out;
+}
+
+.cart.active{
+  right: 0;
+}
+
+.up{
+  display: flex;
+  justify-content: space-between;
+}
+.exit-btn{
+  width: 30px;
+  height: 30px;
+  padding: 20px;
+}
+
+.cart-column {
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid black;
+  margin-right: 1.5em;
+  padding-bottom: 10px;
+  margin-top: 10px;
+}
+
+.cart-row {
+  display: flex;
+}
+
+.cart-item {
+  width: 45%;
+}
+
+.cart-price {
+  width: 20%;
+  font-size: 1.2em;
+  color: #333;
+}
+
+.cart-quantity {
+  width: 35%;
+}
+
+.cart-item-title {
+  color: #333;
+  margin-left: .5em;
+  font-size: 1.2em;
+}
+
+.cart-item-image {
+  width: 75px;
+  height: auto;
+  border-radius: 10px;
+}
+
+.btn-danger {
+  color: white;
+  background-color: rgb(85, 85, 85);
+  border: none;
+  border-radius: .5em;
+  font-weight: bold;
+  display: block;
+  font-size: .7rem;
+  text-decoration: none;
+  text-align: center;
+  padding: 10px 12px;
+  background-color: rgb(85, 85, 85);
+}
+
+.btn-danger:hover {
+  background-color: rgb(85, 85, 85);
+}
+
+.cart-quantity-input {
+  height: 34px;
+  width: 50px;
+  border-radius: 5px;
+  border: 1px solid #56CCF2;
+  background-color: #eee;
+  color: #333;
+  padding: 0;
+  text-align: center;
+  font-size: 1.2em;
+  margin-right: 25px;
+}
+
+.cart-row:last-child {
+  border-bottom: 1px solid black;
+}
+
+.cart-row:last-child .cart-column {
+  border: none;
+}
+
+.cart-total {
+  text-align: end;
+  margin-top: 10px;
+  margin-right: 10px;
+}
+
+.cart-total-title {
+  font-weight: bold;
+  font-size: 1.5em;
+  color: black;
+  margin-right: 20px;
+}
+
+.cart-total-price {
+  color: #333;
+  font-size: 1.1em;
+}
+
+.btn-purchase {
+  display: block;
+  margin: 40px auto 80px auto;
+  font-size: .8rem;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border: none;
+  border-radius: .5em;
+  padding: 10px 12px;
+  background-color: rgb(85, 85, 85);
+}
+
+/* add to cart end */
+
+.bookShelf {
+  margin-top: 30px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+  grid-gap: 15px;
+  z-index: auto;
+  justify-items: center;
+}
+.book {
+  display: flex;
+  width: 400px;
+  border-radius: 10px;
+  box-shadow: 10px 10px 30px rgb(0, 0, 0, 0.2);
+  transition: 300ms;
+}
+
+.book_image {
+  width: 200px;
+  border-radius: 10px;
+}
+
+.book_info {
+  padding: 10px;
+}
+.book_info_title {
+  font-size: 20px;
+}
+
+.book_info_rating {
+  color: orange;
+  font-size: 20px;
+}
+.book_info_price {
+  color: green;
+  font-weight: bold;
+}
+.book_info_addToCart {
+  font-size: 10px;
+  text-decoration: none;
+  color: white;
+  text-align: center;
+  border-radius: 28px;
+  padding: 10px 12px;
+  background-color: rgb(85, 85, 85);
+  display: inline-block;
+  margin: 50px auto auto;
+}
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  body {
+    flex-direction: row;
+    min-width: 600px;
+  }
+
+  .bookShelf {
+    margin-left: auto;
+  }
+  .navbar {
+    flex-direction: column;
+    position: fixed;
+    border: none;
+  }
+
+  .navbarElement {
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 5px;
+  }
+  .navbarElementLogo {
+    border: none;
+  }
+}
+
+/*-----------------------------------------*/
+.bookShelf-blured {
+  filter: blur(3px);
+  z-index: 0;
+}
+.book-selected {
+  filter: blur(0px);
+  position: fixed;
+  background-color: white;
+  z-index: 1;
+  top: 20%;
+  transition: transform 600ms;
+  /* width: 50%;
+  height: 60%; */
+}
+.book-selected > .book_image {
+  width: 40%;
+}

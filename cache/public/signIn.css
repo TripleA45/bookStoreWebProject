@@ -1,0 +1,371 @@
+* {
+  font-family: "Montserrat", "Helvetica", sans-serif;
+}
+
+body{
+  margin: 0;
+  padding: 0;
+}
+
+.wrapper {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.wrapper:before{
+  content: '';
+  position: absolute;
+  width: 2200px;
+  height: 2600px;
+  border-radius: 50%;
+  background-image: url(./../Img/pexels-janko-ferlic-590493.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: left;
+  top: -5%;
+  right: 48%;
+  transform: translateY(-50%);
+  z-index: 6;
+  transition: 1.8s ease-in-out;
+}
+
+.container {
+  position: absolute; 
+  width: 100px;
+  height: 100px;
+  top: 0;
+  left: 0;
+}
+
+label img {
+  width: 30px;
+  height: 30px;
+  margin-right: 10px;
+}
+
+.email {
+  width:50%;
+  margin-top: 30px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  padding: 3px;
+}
+
+.username {
+  width: 50%;
+  margin-top: 30px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  padding: 3px;
+}
+
+.password {
+  width: 50%;
+  margin-top: 20px;
+  box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.2);
+  border-radius: 10px;
+  display: flex;
+  padding: 3px;
+}
+
+.formButtons {
+  width: 50%;
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: space-evenly;
+}
+
+div > input {
+  font-size: 11pt;
+  border: none;
+  outline: none;
+  width: 80%;
+}
+
+.panel-container{
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 10%;
+  left: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+}
+
+.panel{
+  padding: 5%;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-around;
+  text-align: left;
+  z-index: 7;
+}
+
+.left-panel{
+  pointer-events: auto;
+  padding: 6rem 20% 5rem 20%;
+}
+
+.right-panel{
+  pointer-events: none;
+  padding: 6rem 20% 5rem 50%;
+}
+
+.left-panel h1,
+.right-panel h1 {
+  margin-top: 10%;
+  font-size: 72pt;
+  transition: transform 600ms;
+}
+
+.panel .contents{
+  color: white;
+  transition: 1.1s .4s ease-in-out;
+}
+
+.panel h2{
+  margin-top: -20%;
+  margin-bottom: 20%;
+  font-size: 24pt;
+  transition: transform 600ms;
+}
+
+.btn-transparent{
+  margin: 0;
+  color: white;
+  background: none;
+  border: 2px solid white;
+  border-radius: 10px;
+  width: 130px;
+  height: 41px;
+  font-weight: 500;
+  font-size: 10pt;
+  cursor: pointer;
+}
+
+.signin-signup{
+  position: absolute;
+  top: 60%;
+  left: 75%;
+  transform: translate(-50%, -50%);
+  width: 50%;
+  display: grid;
+  grid-template-columns: 1fr;
+  z-index: 5;
+  transition: 1s 0.7 ease-in-out;
+}
+
+form{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  padding: 0 5rem;
+  overflow: hidden;
+  grid-column: 1 / 2;
+  grid-row: 1 / 2;
+  transition: 0.2s 0.7s ease-in-out;
+}
+
+.signinForm {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+form.signinForm{
+  z-index: 2;
+}
+
+form.signupForm{
+  z-index: 1;
+  opacity: 0;
+}
+
+.signinForm h1 {
+  margin-top: 0;
+}
+
+.signin, .signup,
+.cancel {
+  margin-top: 30px;
+  color: white;
+  background-color: rgb(85, 85, 85);
+  padding: 1em;
+  border-radius: 10px;
+  font-size: 10pt;
+  cursor: pointer;
+  border: none;
+  width: 40%;
+  transition: transform 600ms, box-shadow 600ms;
+}
+
+.signupForm {
+  display: flex;
+  flex-flow: column wrap;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  height: 100%;
+}
+
+.signupForm h1 {
+  margin-top: 0;
+}
+
+form > div {
+  display: flex;
+  flex-flow: row nowrap;
+  align-items: center;
+}
+
+.password img {
+  width: 28px;
+  height: 28px;
+}
+
+.right-panel .contents{
+  transform: translateX(1000px);
+}
+
+/* Animation transition*/
+.wrapper.sign-up-mode::before{
+transform: translate(100%, -50%);
+right: 52%;
+}
+
+.wrapper.sign-up-mode .left-panel .contents{
+  transform: translateX(-1000px);
+}
+
+.wrapper.sign-up-mode .right-panel .contents{
+  transform: translateX(0px);
+}
+
+.wrapper.sign-up-mode .left-panel{
+  pointer-events: none;
+}
+.wrapper.sign-up-mode .right-panel{
+  pointer-events: auto;
+}
+
+.wrapper.sign-up-mode .signin-signup{
+  left: 25%;
+}
+
+.wrapper.sign-up-mode form.signinForm{
+  z-index: 1;
+  opacity: 0;
+  transition: 1s 0.7 ease-in-out;
+}
+.wrapper.sign-up-mode form.signupForm{
+  z-index: 2;
+  opacity: 1;
+  transition: 1s 0.7 ease-in-out;
+}
+
+/* End of Animation tranition*/
+
+@media screen and (max-width: 768px) and (min-width: 480px) {
+  body {
+    min-width: 600px;
+  }
+
+  .wrapper{
+    min-height: 600px;
+    height: 100vh;
+  }
+
+  .wrapper:before{
+    width: 1500px;
+    height: 1500px;
+    left: 30%;
+    bottom: 55%;
+    transform: translateX(-50%);
+    right: initial;
+    top: initial;
+    transition: 2s ease-in-out;
+  }
+
+  .signin-signup{
+    width: 90%;
+    left: 50%;
+    top: 90%;
+    transform: translate(-50%, -100%);
+    transition: 1s 0.8s ease-in-out;
+  }
+
+  .panel-container{
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 2fr 1fr;
+  }
+
+  .panel{
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px 5%;
+    top: -8%;
+  }
+
+  .panel .contents{
+    margin-top: -40px;
+    padding-top: -10%;
+    width: fit-content;
+    height: min-content;
+  }
+
+  .panel h2{
+    font-size: 12pt;
+  }
+
+  .panel h3{
+    font-size: 10pt;
+  }
+
+  .btn-transparent{
+    width: 110px;
+    height: 40px;
+    font-size: 0.7rem;
+  }
+
+  .left-panel{
+    grid-row: 1 / 2;
+  }
+
+  .right-panel{
+    grid-row: 2 / 4;
+  }
+
+  .left-panel h1,
+  .right-panel h1 {
+    margin-top: -5%;
+    font-size: 36pt;
+  }
+
+  .wrapper.sign-up-mode:before{
+    transform: translate(-50%, 100%);
+    bottom: 45%;
+    right: initial;
+  }
+
+  .wrapper.sign-up-mode .left-panel .contents{
+    transform: translateY(-250px);
+  }
+
+  .wrapper.sign-up-mode .signin-signup{
+    top: 5%;
+    transform: translate(-50%, 0);
+    left: 58%;
+  }
+}
